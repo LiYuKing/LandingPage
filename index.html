@@ -1,0 +1,77 @@
+﻿
+<html>
+    <head>
+        <title>鯉魚教</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="liyu.png">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="keywords" content="Screen Message, Sciuridae, Online, Tool, Utilities">
+        <meta name="description" content="Online Screen Message Tool">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="liyu.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+        <script src="//apis.google.com/js/client.js"> </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+        <script src="liyu.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    </head>
+
+    <body onload="init()" onresize="adjust()">
+        <div class="squeezable pusher" id="container">
+            <textarea id="textarea" onKeyUp="adjust()" onpaste="adjust()" oninput="adjust()" spellcheck="false" readonly>鯉魚.tw</textarea>
+            <span id="test"></span>
+        </div>	
+        <div class=""  style="display:none" id="sidebar" data-dim-page="false" data-scroll-lock="false">
+            <div class="ts header">
+                <i class="paint brush"></i>背景顏色
+            </div>
+            <button onclick="bgcolor('white')"><i style="color:white;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('black')"><i style="color:black;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('red')"><i style="color:red;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('orange')"><i style="color:orange;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('yellow')"><i style="color:yellow;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('green')"><i style="color:green;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('blue')"><i style="color:blue;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('blue')"><i style="color:indigo;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('purple')"><i style="color:purple;" class="ts icon large circle color-button"></i></button>
+            <button onclick="bgcolor('rainbow')"><i class="ts icon large circle rainbow-button"></i></button><br>
+            自訂<input type="color" id="bgcolorpicker" onclick="fontcolor('picker')" onchange="bgcolor('picker')" value="#ff0000" style="width:60%">
+            <div class="ts section divider"></div>
+            <div class="ts header">
+                <i class="paint brush"></i>文字顏色
+            </div>
+            <button onclick="fontcolor('white')"><i style="color:white;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('black')"><i style="color:black;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('red')"><i style="color:red;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('orange')"><i style="color:orange;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('yellow')"><i style="color:yellow;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('green')"><i style="color:green;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('blue')"><i style="color:blue;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('blue')"><i style="color:indigo;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('purple')"><i style="color:purple;" class="ts icon large circle color-button"></i></button>
+            <button onclick="fontcolor('rainbow')"><i class="ts icon large circle rainbow-button"></i></button><br>
+            自訂<input type="color" id="fontcolorpicker" onclick="fontcolor('picker')" onchange="fontcolor('picker')" value="#ff0000" style="width:60%">
+            <div class="ts section divider"></div>
+            <button id="blink_btn" onclick="mode('blink')" class="ts circular inverted button">閃爍</button>
+            <button id="pluse_btn" onclick="mode('pluse')" class="ts circular inverted button">脈衝</button>
+            <div class="ts section divider"></div>
+            <h5>網址:</h5>
+            <div class="ts input">
+                <input id="url" type="text" placeholder="網址">
+            </div>
+            <div class="ts section divider"></div>
+            <button onclick="genshort()" class="ts fluid button">產生短網址</button>
+
+            <div class="ts input">
+                <input id="googl" type="text" placeholder="短網址">
+            </div>
+            <div class="ts section divider"></div>
+            <button onclick="qr()" class="ts fluid button">產生QR Code</button>
+            <canvas style="width:100%" id="qr"></canvas>
+            <div class="ts section divider"></div>
+        </div>
+    </body>
+</html>

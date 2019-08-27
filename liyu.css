@@ -1,0 +1,228 @@
+@import url('//fonts.googleapis.com/css?family=Noto+Sans');
+@import url('//fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+.ts.icon.large.circle.color-button{
+    -webkit-text-stroke: 1px black;
+}
+
+.ts.icon.large.circle.rainbow-button{
+    -webkit-text-stroke: 1px black  !important;
+    background: linear-gradient(to right, red , orange, yellow, green, blue, purple) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent  !important;
+}
+
+.ts.fluid.button.rainbow{
+    background: linear-gradient(to right, red , orange, yellow, green, blue, purple) !important;
+}
+
+a[href], input[type='submit'], input[type='color'], label[for], select, button, .pointer {
+    cursor: pointer;
+}
+
+body{
+    line-height: normal !important ;
+}
+
+#textarea {
+    background: transparent;
+    transition: 0.1s;
+    position: absolute !important ;
+    top: 0px !important ;
+    left: 0px !important ;
+    width: 100% !important ;
+    height: 100% !important ;
+    font-family: 'Noto Sans TC', 'Noto Sans', sans-serif !important ;
+    margin: 0px !important ;
+    border: 0px !important ;
+    line-height: normal !important;
+    vertical-align:middle !important;
+    text-align: center !important ;
+    overflow: hidden !important ;
+    resize: none !important ;
+}
+
+   textarea:hover{
+     cursor: none; 
+    }
+
+#textarea :focus {
+   outline: none !important ;
+}
+
+#test {
+   position: absolute !important ;
+   visibility: hidden !important ;
+   top: 0px !important ;
+   left: 0px !important ;
+   font-size: 30px !important ;
+   white-space: pre !important ;
+   border: 0px !important ;
+   padding: 0.1em !important ;
+   margin: 0px !important ;
+}
+
+.rainbowbg { 
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3) !important;
+  background-size: 1800% 1800% !important;
+}
+  
+
+@keyframes rainbowbg { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}    }
+@-o-keyframes rainbowbg {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}    }
+@-moz-keyframes rainbowbg {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}    }
+    
+@-webkit-keyframes rainbowbg {
+    0%{background-position:0% 82%;}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}    }
+
+@keyframes rainbow {
+    0% {color: #e87d7d;}2% {color: #e88a7d;}4% {color: #e8977d;}6% {color: #e8a47d;}
+    8% {color: #e8b07d;}10% {color: #e8bd7d;}12% {color: #e8ca7d;}14% {color: #e8d77d;}
+    16% {color: #e8e47d;}18% {color: #dfe87d;}20% {color: #d3e87d;}22% {color: #c6e87d;}
+    24% {color: #b9e87d;}26% {color: #ace87d;}28% {color: #9fe87d;} 30% {color: #92e87d;}
+    32% {color: #86e87d;}34% {color: #7de881;}36% {color: #7de88e;}38% {color: #7de89b;}
+    40% {color: #7de8a8;}42% {color: #7de8b5;}44% {color: #7de8c1;}46% {color: #7de8ce;}
+    48% {color: #7de8db;}50% {color: #7de8e8;}52% {color: #7ddbe8;}54% {color: #7dcee8;}
+    56% {color: #7dc1e8;}58% {color: #7db5e8;}60% {color: #7da8e8;}62% {color: #7d9be8;}
+    64% {color: #7d8ee8;}66% {color: #7d81e8;}68% {color: #867de8;}70% {color: #927de8;}
+    72% {color: #9f7de8;}74% {color: #ac7de8;}76% {color: #b97de8;}78% {color: #c67de8;}
+    80% {color: #d37de8;}82% {color: #df7de8;}84% {color: #e87de4;}86% {color: #e87dd7;}
+    88% {color: #e87dca;}90% {color: #e87dbd;}92% {color: #e87db0;}94% {color: #e87da4;}
+    96% {color: #e87d97;}98% {color: #e87d8a;}100% {color: #e87d7d;}
+  }
+  
+@-o-keyframes rainbow {
+    0% {color: #e87d7d;}2% {color: #e88a7d;}4% {color: #e8977d;}6% {color: #e8a47d;}
+    8% {color: #e8b07d;}10% {color: #e8bd7d;}12% {color: #e8ca7d;}14% {color: #e8d77d;}
+    16% {color: #e8e47d;}18% {color: #dfe87d;}20% {color: #d3e87d;}22% {color: #c6e87d;}
+    24% {color: #b9e87d;}26% {color: #ace87d;}28% {color: #9fe87d;} 30% {color: #92e87d;}
+    32% {color: #86e87d;}34% {color: #7de881;}36% {color: #7de88e;}38% {color: #7de89b;}
+    40% {color: #7de8a8;}42% {color: #7de8b5;}44% {color: #7de8c1;}46% {color: #7de8ce;}
+    48% {color: #7de8db;}50% {color: #7de8e8;}52% {color: #7ddbe8;}54% {color: #7dcee8;}
+    56% {color: #7dc1e8;}58% {color: #7db5e8;}60% {color: #7da8e8;}62% {color: #7d9be8;}
+    64% {color: #7d8ee8;}66% {color: #7d81e8;}68% {color: #867de8;}70% {color: #927de8;}
+    72% {color: #9f7de8;}74% {color: #ac7de8;}76% {color: #b97de8;}78% {color: #c67de8;}
+    80% {color: #d37de8;}82% {color: #df7de8;}84% {color: #e87de4;}86% {color: #e87dd7;}
+    88% {color: #e87dca;}90% {color: #e87dbd;}92% {color: #e87db0;}94% {color: #e87da4;}
+    96% {color: #e87d97;}98% {color: #e87d8a;}100% {color: #e87d7d;}
+  }
+  
+@-moz-keyframes rainbow {
+    0% {color: #e87d7d;}2% {color: #e88a7d;}4% {color: #e8977d;}6% {color: #e8a47d;}
+    8% {color: #e8b07d;}10% {color: #e8bd7d;}12% {color: #e8ca7d;}14% {color: #e8d77d;}
+    16% {color: #e8e47d;}18% {color: #dfe87d;}20% {color: #d3e87d;}22% {color: #c6e87d;}
+    24% {color: #b9e87d;}26% {color: #ace87d;}28% {color: #9fe87d;} 30% {color: #92e87d;}
+    32% {color: #86e87d;}34% {color: #7de881;}36% {color: #7de88e;}38% {color: #7de89b;}
+    40% {color: #7de8a8;}42% {color: #7de8b5;}44% {color: #7de8c1;}46% {color: #7de8ce;}
+    48% {color: #7de8db;}50% {color: #7de8e8;}52% {color: #7ddbe8;}54% {color: #7dcee8;}
+    56% {color: #7dc1e8;}58% {color: #7db5e8;}60% {color: #7da8e8;}62% {color: #7d9be8;}
+    64% {color: #7d8ee8;}66% {color: #7d81e8;}68% {color: #867de8;}70% {color: #927de8;}
+    72% {color: #9f7de8;}74% {color: #ac7de8;}76% {color: #b97de8;}78% {color: #c67de8;}
+    80% {color: #d37de8;}82% {color: #df7de8;}84% {color: #e87de4;}86% {color: #e87dd7;}
+    88% {color: #e87dca;}90% {color: #e87dbd;}92% {color: #e87db0;}94% {color: #e87da4;}
+    96% {color: #e87d97;}98% {color: #e87d8a;}100% {color: #e87d7d;}
+  }
+  
+@-webkit-keyframes rainbow {
+    0% {color: #e87d7d;}2% {color: #e88a7d;}4% {color: #e8977d;}6% {color: #e8a47d;}
+    8% {color: #e8b07d;}10% {color: #e8bd7d;}12% {color: #e8ca7d;}14% {color: #e8d77d;}
+    16% {color: #e8e47d;}18% {color: #dfe87d;}20% {color: #d3e87d;}22% {color: #c6e87d;}
+    24% {color: #b9e87d;}26% {color: #ace87d;}28% {color: #9fe87d;} 30% {color: #92e87d;}
+    32% {color: #86e87d;}34% {color: #7de881;}36% {color: #7de88e;}38% {color: #7de89b;}
+    40% {color: #7de8a8;}42% {color: #7de8b5;}44% {color: #7de8c1;}46% {color: #7de8ce;}
+    48% {color: #7de8db;}50% {color: #7de8e8;}52% {color: #7ddbe8;}54% {color: #7dcee8;}
+    56% {color: #7dc1e8;}58% {color: #7db5e8;}60% {color: #7da8e8;}62% {color: #7d9be8;}
+    64% {color: #7d8ee8;}66% {color: #7d81e8;}68% {color: #867de8;}70% {color: #927de8;}
+    72% {color: #9f7de8;}74% {color: #ac7de8;}76% {color: #b97de8;}78% {color: #c67de8;}
+    80% {color: #d37de8;}82% {color: #df7de8;}84% {color: #e87de4;}86% {color: #e87dd7;}
+    88% {color: #e87dca;}90% {color: #e87dbd;}92% {color: #e87db0;}94% {color: #e87da4;}
+    96% {color: #e87d97;}98% {color: #e87d8a;}100% {color: #e87d7d;}
+  }
+  
+@keyframes blink {
+    0% {visibility: hidden}
+    40% {visibility: hidden}
+    80% {visibility: unset}
+    100% {visibility: unset}
+}
+@-o-keyframes blink {
+    0% {visibility: hidden}
+    40% {visibility: hidden}
+    80% {visibility: unset}
+    100% {visibility: unset}
+}
+@-moz-keyframes blink {
+    0% {visibility: hidden}
+    40% {visibility: hidden}
+    80% {visibility: unset}
+    100% {visibility: unset}
+}
+@-webkit-keyframes blink {
+    0% {visibility: hidden}
+    40% {visibility: hidden}
+    80% {visibility: unset}
+    100% {visibility: unset}
+}
+@keyframes pluse {
+    0% {opacity: 0}
+    10% {opacity: 0.5}
+    20% {opacity: 1}
+    30% {opacity: 0.8}
+    40% {opacity: 0.7}
+    50% {opacity: 0.6}
+    60% {opacity: 0.5}
+    70% {opacity: 0.4}
+    80% {opacity: 0.3}
+    90% {opacity: 0.2}
+    100% {opacity: 0.1}
+}
+@-o-keyframes pluse {
+    0% {opacity: 0}
+    10% {opacity: 0.5}
+    20% {opacity: 1}
+    30% {opacity: 0.8}
+    40% {opacity: 0.7}
+    50% {opacity: 0.6}
+    60% {opacity: 0.5}
+    70% {opacity: 0.4}
+    80% {opacity: 0.3}
+    90% {opacity: 0.2}
+    100% {opacity: 0.1}
+}
+@-moz-keyframes pluse {
+    0% {opacity: 0}
+    10% {opacity: 0.5}
+    20% {opacity: 1}
+    30% {opacity: 0.8}
+    40% {opacity: 0.7}
+    50% {opacity: 0.6}
+    60% {opacity: 0.5}
+    70% {opacity: 0.4}
+    80% {opacity: 0.3}
+    90% {opacity: 0.2}
+    100% {opacity: 0.1}
+}
+@-webkit-keyframes pluse {
+    0% {opacity: 0}
+    10% {opacity: 0.5}
+    20% {opacity: 1}
+    30% {opacity: 0.8}
+    40% {opacity: 0.7}
+    50% {opacity: 0.6}
+    60% {opacity: 0.5}
+    70% {opacity: 0.4}
+    80% {opacity: 0.3}
+    90% {opacity: 0.2}
+    100% {opacity: 0.1}
+}
