@@ -21,70 +21,73 @@ a[href], input[type='submit'], input[type='color'], label[for], select, button, 
 }
 
 body{
-    line-height: normal !important ;
+    line-height: normal !important;
 }
 
 #textarea {
     background: transparent;
     transition: 0.1s;
-    position: absolute !important ;
-    top: 0px !important ;
-    left: 0px !important ;
-    width: 100% !important ;
-    height: 100% !important ;
-    font-family: 'Noto Sans TC', 'Noto Sans', sans-serif !important ;
-    margin: 0px !important ;
-    border: 0px !important ;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-family: 'Noto Sans TC', 'Noto Sans', sans-serif !important;
+    margin: 0 !important;
+    border: 0 !important;
     line-height: normal !important;
     vertical-align:middle !important;
-    text-align: center !important ;
-    overflow: hidden !important ;
-    resize: none !important ;
+    text-align: center !important;
+    overflow: hidden !important;
+    resize: none !important;
 }
 
-   textarea:hover{
-     cursor: none; 
-    }
+textarea:hover {
+    cursor: none;
+}
 
 #textarea :focus {
-   outline: none !important ;
+    outline: none !important;
 }
 
 #test {
-   position: absolute !important ;
-   visibility: hidden !important ;
-   top: 0px !important ;
-   left: 0px !important ;
-   font-size: 30px !important ;
-   white-space: pre !important ;
-   border: 0px !important ;
-   padding: 0.1em !important ;
-   margin: 0px !important ;
+    position: absolute !important;
+    visibility: hidden !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 30px !important;
+    white-space: pre !important;
+    border: 0 !important;
+    padding: 0.1em !important;
+    margin: 0 !important;
 }
 
-.rainbowbg { 
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3) !important;
-  background-size: 1800% 1800% !important;
+.rainbowbg {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3) !important;
+    background-size: 1800% 1800% !important;
 }
-  
 
-@keyframes rainbowbg { 
+@keyframes rainbowbg {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
-    100%{background-position:0% 82%}    }
+    100%{background-position:0% 82%}
+}
 @-o-keyframes rainbowbg {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
-    100%{background-position:0% 82%}    }
+    100%{background-position:0% 82%}
+}
 @-moz-keyframes rainbowbg {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
-    100%{background-position:0% 82%}    }
+    100%{background-position:0% 82%}
+}
     
 @-webkit-keyframes rainbowbg {
     0%{background-position:0% 82%;}
     50%{background-position:100% 19%}
-    100%{background-position:0% 82%}    }
+    100%{background-position:0% 82%}
+}
 
 @keyframes rainbow {
     0% {color: #e87d7d;}2% {color: #e88a7d;}4% {color: #e8977d;}6% {color: #e8a47d;}
